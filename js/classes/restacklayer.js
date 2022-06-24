@@ -50,23 +50,23 @@ class ReStackLayer
         this.upgradeTree = [
             [
                 new RestackLayerUpgrade("Increase the Resource Multiplier",
-                    level => new Decimal(1e24),
-                    level => Decimal.pow(2, level),{
-                        maxLevel: 1,
+                    level => new Decimal(1e24).pow(new Decimal.pow(10, level)),
+                    level => Decimal.pow(10, level),{
+                        maxLevel: 1000,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(0, "^")
                     })
             ],
             [
                 new RestackLayerUpgrade("Resource Multipliers are stronger",
-                    level => new Decimal(1e50),
+                    level => new Decimal(1e50).pow(new Decimal.pow(9, level)),
                     level => Decimal.pow(4, level),{
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     }),
                 new RestackLayerUpgrade("Resource Multiplier Upgrades are stronger based on time spent this ReStack",
-                level => new Decimal(1e50),
-                level => new Decimal(1).add(Decimal.pow(2, level).sub(1).mul(this.timeSpent / 1000)),{
-                        maxLevel: 1,
+                level => new Decimal(1e50).pow(level.add("1")),
+                level => new Decimal(1).add(Decimal.pow(5, level).sub(1).mul(this.timeSpent / 1000)),{
+                        maxLevel: 3,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     })
             ],
@@ -84,7 +84,7 @@ class ReStackLayer
             [
                 new RestackLayerUpgrade("Resource Powerers are stronger",
                     level => new Decimal("1e2000"),
-                    level => new Decimal(1).add(level.mul(0.1)), {
+                    level => new Decimal(1).add(level.mul(0.2)), {
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     }),
@@ -131,12 +131,12 @@ class ReStackLayer
                     }),
             ],
             [
-                new RestackLayerUpgrade("Template",
+                new RestackLayerUpgrade("Torghter Mouse",
                     level => new Decimal("1ee308"),
                     level => new Decimal(1).add(level), {
                         maxLevel: 1
                     }),
-                new RestackLayerUpgrade("Template",
+                new RestackLayerUpgrade("Torghter Mouse",
                     level => new Decimal("1ee308"),
                     level => new Decimal(1).add(level.mul(0.15)), {
                         maxLevel: 1,
@@ -144,8 +144,19 @@ class ReStackLayer
                     }),
             ],
             [
-                new RestackLayerUpgrade("Template",
+                new RestackLayerUpgrade("Coming Soon...",
                     level => new Decimal("1ee1000"),
+                    level => level.gt(0), {
+                        maxLevel: 1,
+                        getEffectDisplay: function()
+                        {
+                            return this.level.gt(0) ? "Doesn't reset" : "Resets";
+                        }
+                    }),
+            ],
+            [
+                new RestackLayerUpgrade("Rereset",
+                    level => new Decimal("1ee3003"),
                     level => level.gt(0), {
                         maxLevel: 1,
                         getEffectDisplay: function()
@@ -178,9 +189,9 @@ class ReStackLayer
             resourcePowerersStrength: this.upgradeTree[5][0],
             resourceMultipliersLevelScaling: this.upgradeTree[5][1],
             noReset: this.upgradeTree[6][0],
-            template1: this.upgradeTree[7][0],
-            template2: this.upgradeTree[7][1],
-            template3: this.upgradeTree[8][0]
+            torghterMouse: this.upgradeTree[7][0],
+            torghterMouse2: this.upgradeTree[7][1],
+            coming: this.upgradeTree[8][0]
         };
     }
 
