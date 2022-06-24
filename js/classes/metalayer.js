@@ -2,7 +2,7 @@ class MetaLayer
 {
     constructor()
     {
-        this.active = false;
+        this.active = true;
         this.layer = new Decimal(0);
         this.resource = new Decimal(1);
 
