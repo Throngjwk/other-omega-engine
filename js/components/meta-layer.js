@@ -32,6 +32,6 @@ Vue.component("meta-layer", {
 <h4>Resource Multipliers</h4>
 <upgrade-container :upgrades="metaLayer.multiplierUpgrades"></upgrade-container>
 <h4 v-if="showPowerers">Resource Powerers</h4>
-<upgrade-container v-if="showPowerers" :upgrades="metaLayer.powerUpgrades"></upgrade-container>
+coming soon
 </div>`
 })

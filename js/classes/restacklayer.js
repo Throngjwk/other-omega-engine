@@ -44,27 +44,27 @@ class ReStackLayer
         };
         this.metaUpgrade = new RestackLayerUpgrade("All your Layer Resources are multiplied each second",
             level => new Decimal(1e10).pow(level.add("1").mul(level.add("1"))),
-            level => 1 + 0.3 * level.toNumber(),{
+            level => 100 + 30 * level.toNumber(),{
                 maxLevel: 5,
             });
         this.upgradeTree = [
             [
                 new RestackLayerUpgrade("Increase the Resource Multiplier",
-                    level => new Decimal(1e24),
-                    level => Decimal.pow(2, level),{
+                    level => new Decimal("1ee10"),
+                    level => Decimal.pow(3, level),{
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(0, "^")
                     })
             ],
             [
                 new RestackLayerUpgrade("Resource Multipliers are stronger",
-                    level => new Decimal(1e50),
-                    level => Decimal.pow(4, level),{
+                    level => new Decimal("1ee25"),
+                    level => Decimal.pow(5, level),{
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     }),
                 new RestackLayerUpgrade("Resource Multiplier Upgrades are stronger based on time spent this ReStack",
-                level => new Decimal(1e50),
+                level => new Decimal("1ee25"),
                 level => new Decimal(1).add(Decimal.pow(2, level).sub(1).mul(this.timeSpent / 1000)),{
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
@@ -72,7 +72,7 @@ class ReStackLayer
             ],
             [
                 new RestackLayerUpgrade("Unlock Resource Powerers",
-                    level => new Decimal(1e150),
+                    level => new Decimal("1ee45"),
                     level => level.gt(0), {
                         maxLevel: 1,
                         getEffectDisplay: function()
@@ -97,7 +97,7 @@ class ReStackLayer
             ],
             [
                 new RestackLayerUpgrade("Your Layer gets substracted instead of reset when buying Upgrades",
-                    level => new Decimal("1e10000"),
+                    level => new Decimal("1ee60"),
                     level => level.gt(0), {
                         maxLevel: 1,
                         getEffectDisplay: function()
@@ -113,7 +113,7 @@ class ReStackLayer
                         maxLevel: 1
                     }),
                 new RestackLayerUpgrade("Resource Multipliers scale better to their level",
-                    level => new Decimal("1ee10"),
+                    level => new Decimal("1ee80"),
                     level => new Decimal(1).add(level.mul(0.15)), {
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
