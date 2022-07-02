@@ -16,7 +16,7 @@ Vue.component('achievement-tab', {
         }
     },
     template: `<div class="achievement-tab">
-<p>You have unlocked {{achievementsUnlocked}} / {{totalAchievements}} Achievements.</p>
+<p>You have unlocked {{achievementsUnlocked}} / {{totalAchievements}} Achievements wasteds now..</p>
 <div class="achievements">
     <achievement v-for="(a, i) in achievements" :key="i" :achievement="a"></achievement>
 </div>

@@ -20,7 +20,7 @@ class Utils
                 return buyable[buyable instanceof AbstractUpgrade ? "level" : "bought"];
             }
         }
-        const r = resource.div(1e15);
+        const r = resource.div(2e15);
         let lvl = 512;
         let interval = lvl / 2;
         while(interval > 1e-16)

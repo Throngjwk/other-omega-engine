@@ -21,7 +21,7 @@ Vue.component("aleph-layer", {
     },
     template: `<div class="aleph-layer">
 <div class="resource">
-    <p>You have {{formatNumber(aleph.aleph, 2, 2, 1e9)}} <span class="aleph">ℵ</span></p>
+    <p>You have wasteds {{formatNumber(aleph.aleph, 2, 2, 1e9)}} <span class="aleph">ℵ</span></p>
     <p>You get {{formatNumber(aleph.getAlephGain(), 2, 2, 1e9)}} <span class="aleph">ℵ</span> every second</p>
 </div>
 <div class="boosts">

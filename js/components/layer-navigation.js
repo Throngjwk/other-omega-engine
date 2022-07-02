@@ -30,7 +30,7 @@ Vue.component("layer-navigation", {
     template: `<div class="layer-navigation">
 <button :class="{selected: l.layer === currentLayer() && multipleLayers()}" :title="fullLayerName(l.layer)" v-if="isDisplayed(i)" v-for="(l, i) in layers" :key="i" @click="setCurrentLayer(l)" :style="{fontSize: buttonFontSize(l)}">
     <resource-name :layerid="l.layer"></resource-name>
-    <layer-colored-text v-if="showOrdinals" class="ordinal" :layerid="l.layer">#{{Number(l.layer) + 1}}</layer-colored-text>
+    <layer-colored-text v-if="showOrdinals" class="ordinal" :layerid="l.layer">Part {{Number(l.layer) + 1}}</layer-colored-text>
 </button>
 </div>`
 });

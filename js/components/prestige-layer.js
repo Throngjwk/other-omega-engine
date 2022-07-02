@@ -126,7 +126,7 @@ Vue.component("prestige-layer", {
 </div>
 <div v-if="layer.hasTreeUpgrades() && tab === TAB_UPGRADE_TREE">
     <div class="respec" v-if="!layer.isNonVolatile()">
-        <button @click="layer.respecUpgradeTree()">Respec to reset all the Upgrades, but you don't get the spent <resource-name :layerid="layer.layer"></resource-name> back!</button>
+        <button @click="layer.respecUpgradeTree()">Respec to reset all the Upgrades AAA, but you don't get the spent <resource-name :layerid="layer.layer"></resource-name> back!</button>
     </div>
     <upgrade-tree :upgrades="layer.treeUpgrades"></upgrade-tree>
 </div>

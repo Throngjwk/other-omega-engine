@@ -6,7 +6,7 @@ Vue.component("layer-colored-text", {
             const lid = new Decimal(this.getLayerId());
             if(this.getLayerId() instanceof Decimal && this.getLayerId().gte(Infinities[3]))
             {
-                return "#ffffff";
+                return "#ff22ff";
             }
             if(this.getLayerId() instanceof Decimal && this.getLayerId().gte(Infinities[2]))
             {
@@ -18,7 +18,7 @@ Vue.component("layer-colored-text", {
             }
             if(this.getLayerId() instanceof Decimal && this.getLayerId().gte(Infinities[0]))
             {
-                return "#ff00ff";
+                return "#4dbc13";
             }
             let h = 33 * Math.min(lid.toNumber(), 10000);
             let s = Math.min(100, 10 * this.getLayerId());

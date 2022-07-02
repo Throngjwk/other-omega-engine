@@ -1,7 +1,7 @@
 var mod = {
     primaryName: "ω",
     secondaryName: "Engine",
-    version: "1.0.0",
+    version: "1.0.0 Die",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
     themes: [
@@ -13,11 +13,11 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
-        ["Ω-Lλγers",
+        ["???",
         [
-            "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
-            "ψϝϛͱϻϙͳϸ",
-            ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]
+            "?",
+            "?",
+            ["?", "?","?","?"]
         ]],
         ["Alphabet",
         [
@@ -53,7 +53,7 @@ var mod = {
         ["Minecraft", "css/fonts/minecraft.css"],
     ],
     saves: [
-        ["Save 1", ""],
+        ["Save idk", ""],
         ["Save 2", "2"],
         ["Save 3", "3"],
         ["Save 4", "4"],

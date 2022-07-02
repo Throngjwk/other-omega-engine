@@ -20,7 +20,7 @@ function onCreate()
 {
     const loadingText =  document.querySelector("#loading > p");
 
-    loadingText.innerHTML = "Initializing...";
+    loadingText.innerHTML = "Initializing daaaa...";
     functions.generateLayer(0);
     functions.setCurrentLayer(game.layers[0]);
     loadingText.innerHTML = "Loading Savegame...";

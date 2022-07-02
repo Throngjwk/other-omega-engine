@@ -159,7 +159,7 @@ Vue.component("settings-menu", {
 </div>
 <div class="settings-row">
     <button @click="copy()">Copy to Clipboard</button>
-    <button @click="paste()">Paste from Clipboard</button>
+    <button @click="paste()">Paste from Clipboard gaaaa</button>
     <button @click="clear()">Clear</button>
     <button @click="download()">Download as .txt</button>
 </div>

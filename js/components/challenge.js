@@ -21,7 +21,7 @@ Vue.component("challenge", {
     <h4><layer-colored-text :layerid="challenge.layer.layer" v-html="challenge.name"></layer-colored-text></h4>
     <p>{{challenge.level}} / {{challenge.maxLevel}}</p>
     <p v-if="challenge.level < challenge.maxLevel">{{challenge.getDescription()}}</p>
-    <p v-else>Completed!</p>
+    <p v-else>Completed Wateds wowoowow!</p>
     <p v-if="challenge.level > 0">Reward: {{challenge.getRewardDescription()}}</p>
     <p>Goal: {{formatNumber(challenge.getResourceGoal(), 2, 2)}} <resource-name :layerid="challenge.goalLayer.layer"></resource-name></p>
 </button>`

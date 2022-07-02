@@ -12,7 +12,7 @@ Vue.component("guide-tab", {
     },
     template: `<div class="guide-tab">
     <guide-item>
-        <template v-slot:title>Coming soon</template>
+        <template v-slot:title>Coming soon Wasted</template>
         <template v-slot:text>in a later update
         </template>
     </guide-item>
