@@ -41,7 +41,10 @@ Vue.component("mod-layer", {
 <div class="upgrades">
     <mod-upgrade :upgrade="mod.upgrades.pointGain"></mod-upgrade>
     <mod-upgrade :upgrade="mod.upgrades.xGain"></mod-upgrade>
-    <mod-upgrade :upgrade="mod.upgrades.boostAlephBase"></mod-upgrade>
+</div>
+<h3>x Enachers</h3>
+<div class="upgrades">
+    <mod-upgrade2 :upgrade="mod.upgrades.boostAlephBase"></mod-upgrade2>
 </div>
 </div>`
 });
