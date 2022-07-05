@@ -499,6 +499,50 @@ p.resource-display > span:first-child{
     text-align: center;
 }
 
+/*Mod*/
+
+.mod-layer{
+    font-weight: bold;
+    text-shadow: 0.07em 0 0.07em currentColor;
+}
+
+.mod-layer .boosts, .mod-layer .resource, .mod-layer .tabs{
+    text-align: center;
+}
+
+.mod-layer .boosts{
+    margin: 1rem 0;
+}
+
+.mod-layer .resource{
+    font-size: 120%;
+}
+
+.mod-layer .resource p:first-child{
+    font-size: 120%;
+}
+
+.mod-layer .upgrades{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.mod-layer .upgrades:last-child .upgrade{
+    width: 20%;
+}
+
+.mod-layer h3{
+    text-align: center;
+}
+
+.mod-layer[type=stats] {
+    font-size: medium;
+    text-align: center;
+    color: blue;
+}
+
+
 /*Automator*/
 
 .automator-tab{
