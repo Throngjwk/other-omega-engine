@@ -158,6 +158,7 @@ function tickGame(seconds)
 
     game.restackLayer.tick(seconds);
     game.metaLayer.tick(seconds);
+    game.mod.tick(seconds);
 }
 
 function simulateGameTime(seconds)
