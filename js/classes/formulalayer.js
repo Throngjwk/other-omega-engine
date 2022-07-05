@@ -28,6 +28,9 @@ class FormulaLayer
             mulitB: new FormulaLayerUpgrade2("Mulitipling of Based b this formula.",
                 level => new Decimal(35).mul(level.add(1)),
                 level => new Decimal(1).add(level.mul(new Decimal.pow(50, this.b)))),
+            divRP: new FormulaLayerUpgrade2("Divide of All Resource Powerers",
+                level => new Decimal(60).mul(level.add(1)),
+                level => new Decimal.pow(8, level)),
         };
     }
 
