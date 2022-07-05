@@ -110,6 +110,7 @@ const game = {
     alephLayer: new AlephLayer(),
     restackLayer: new ReStackLayer(),
     metaLayer: new MetaLayer(),
+    formulaLayer:new FormulaLayer(),
     currentLayer: null,
     currentChallenge: null,
     notifications: [],
