@@ -5,7 +5,7 @@ class Mod
         this.points = new Decimal(0);
         this.x = new Decimal(0);
         this.upgrades = {
-            pointGain: new AlephUpgrade("Increase your point gain",
+            pointGain: new ModUpgrade("Increase your point gain",
                 level => Decimal.pow(1.215, level).mul(100),
                 level => Decimal.pow(1.2, level)),
         };
