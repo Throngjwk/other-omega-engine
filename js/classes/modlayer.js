@@ -18,7 +18,7 @@ class Mod
 
     getXGain()
     {
-        return this.upgrades.alephGain.apply().mul(this.getModBoostFromLayer());
+        return new Decimal(0).mul(this.getModBoostFromLayer());
     }
 
     isUnlocked()
