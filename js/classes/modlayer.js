@@ -6,8 +6,11 @@ class Mod
         this.x = new Decimal(0);
         this.upgrades = {
             pointGain: new ModUpgrade("Increase your point gain",
-                level => Decimal.pow(1.215, level).mul(100),
+                level => Decimal.pow(1.225, level).mul(100),
                 level => Decimal.pow(1.2, level)),
+            xGain: new ModUpgrade("Increase your x gain",
+                level => new Decimal.pow(2, level).mul(5000),
+                level => new Decimal(0).add(level.mul(0.5))),
         };
     }
 
