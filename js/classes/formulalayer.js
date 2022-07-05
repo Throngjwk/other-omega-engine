@@ -24,7 +24,7 @@ class FormulaLayer
                 level => new Decimal.pow(game.metaLayer.layer.add(10).log10(), level)),
             basePower: new FormulaLayerUpgrade2("Base Power of increase resource mulitipler.",
                 level => new Decimal(20).mul(level.add(1)),
-                level => new Decimal.pow(2, level)),
+                level => new Decimal.pow(2, level.add(1))),
         };
     }
 
