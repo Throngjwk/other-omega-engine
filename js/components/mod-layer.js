@@ -21,6 +21,8 @@ Vue.component("mod-layer", {
     },
     template: `<div class="mod-layer">
 <div class="resource">
+    <p>You have {{formatNumber(mod.points, 2, 2, 1e9)}} <span class="omega">x</span></p>
+    <p>You get {{formatNumber(mod.getModGain(), 2, 2, 1e9)}} <span class="omega">x</span> every second</p>
     <p>You have {{formatNumber(mod.x, 2, 2, 1e9)}} <span class="omega">x</span></p>
     <p>You get {{formatNumber(mod.getXGain(), 2, 2, 1e9)}} <span class="omega">x</span> every second</p>
 </div>
