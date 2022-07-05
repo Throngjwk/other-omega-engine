@@ -43,6 +43,7 @@
                 <button v-if="isLayerCategory === 'Guide'" @click="settings.tab = 'Engine Changelog'"><img alt="EC" class="inline" src="https://jwklong.github.io/omega-engine/favicon.png"> Engine Changelog</button>
                 <button v-if="isLayerCategory === 'Achievements && game.secretAchievements.filter(ach => ach.isCompleted).length > 0'" @click="settings.tab = 'Secret Achievements'"><img alt="Sa" class="inline" src="images/star.svg"> Secret Achievements</button>
                 <button v-if="isLayerCategory === 'Settings' && isDebug" @click="settings.tab = 'Debug'"><img alt="S" class="inline" src="images/settings.svg"/> Debug</button>
+                <button v-if="isLayerCategory === 'Settings' && isDebug" @click="settings.tab = 'Mod'">Mod</button>
             </div>
         </nav>
         <news-ticker v-if="settings.newsTicker"></news-ticker>
@@ -66,6 +67,7 @@
         <engine-tab v-if="settings.tab === 'Engine Changelog'"></engine-tab>
         <debug-tab v-if="settings.tab === 'Debug'"></debug-tab>
         <endgame-tab v-if="settings.tab === 'Endgame'"></endgame-tab>
+        <mod v-if="settings.tab === 'Mod'"></mod>
     </main>
     <footer>
         <div>
@@ -157,6 +159,7 @@
 <script src="js/components/engine-tab.js"></script>
 <script src="js/components/debug-tab.js"></script>
 <script src="js/components/endgame-tab.js"></script>
+<script src="js/components/mod.js"></script>
 
 <script src="js/data/functions.js"></script>
 <script src="js/data/computed.js"></script>
