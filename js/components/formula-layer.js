@@ -22,6 +22,7 @@ Vue.component("formula-layer", {
     template: `<div class="formula-layer">
 <div class="resource">
     <p>You have {{formatNumber(formula.n, 2, 2, 1e9)}} <span class="omega">n</span></p>
+    <p>You have {{formatNumber(formula.a, 2, 2, 1e9)}} <span class="omega">n</span></p>
     <p>You get {{formatNumber(formula.getNGain(), 2, 2, 1e9)}} <span class="omega">n</span> every second</p>
 </div>
 <div class="boosts">
