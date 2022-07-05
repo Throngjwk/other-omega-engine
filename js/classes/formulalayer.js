@@ -44,8 +44,8 @@ class FormulaLayer
     {
         if(this.isUnlocked())
         {
-            this.aleph = this.aleph.add(this.getAlephGain().mul(dt));
-            this.t = this.t.add(this.getTGain)
+            this.n = this.n.add(this.getNGain().mul(dt));
+            this.t = this.t.add(this.getTGain())
         }
     }
 
