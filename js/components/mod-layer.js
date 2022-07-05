@@ -38,5 +38,8 @@ Vue.component("mod-layer", {
     <button @click="aleph.maxAll()">Max All (M)</button>
 </div>
 <h3>Variables</h3>
+<div class="upgrades">
+    <mod-upgrade :upgrade="mod.upgrades.pointGain"></mod-upgrade>
+</div>
 </div>`
 });
