@@ -43,7 +43,7 @@ class FormulaLayer
 
     getNBoostFromLayer()
     {
-        if(game.metaLayer.layer.gte("1.8e308")) return new Decimal(0);
+        if(game.metaLayer.layer.gte("1.8e308")) return new Decimal(1);
         return game.metaLayer.layer.log10().sub(307);
     }
 
