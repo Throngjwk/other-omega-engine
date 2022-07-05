@@ -78,6 +78,10 @@ function tickGame(seconds)
         {
             game.alephLayer.maxAll();
         }
+        if(game.settings.tab === "Formula")
+        {
+            game.formulaLayer.maxAll();
+        }
         else
         {
             game.currentLayer.maxAll();
@@ -154,6 +158,7 @@ function tickGame(seconds)
 
     game.restackLayer.tick(seconds);
     game.metaLayer.tick(seconds);
+    game.formulaLayer.tick(seconds);
 }
 
 function simulateGameTime(seconds)

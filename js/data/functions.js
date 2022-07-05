@@ -264,6 +264,14 @@ const functions = {
         {
             game.alephLayer = new AlephLayer();
         }
+        if(loadObj.formulaLayer)
+        {
+            game.formulaLayer.loadFromSave(loadObj.formulaLayer);
+        }
+        else
+        {
+            game.formulaLayer = new FormulaLayer();
+        }
         if(loadObj.automators)
         {
             for(const k of Object.keys(loadObj.automators))
