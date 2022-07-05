@@ -54,6 +54,7 @@ Vue.component("formula-layer", {
 <h3>a Enachers</h3>
 <div class="upgrades">
     <formula-upgrade2 :upgrade="formula.upgrades.basePower"></formula-upgrade2>
+    <formula-upgrade2 :upgrade="formula.upgrades.mulitB"></formula-upgrade2>
 </div>
 </div>`
 });

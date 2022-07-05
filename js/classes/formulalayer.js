@@ -25,12 +25,15 @@ class FormulaLayer
             basePower: new FormulaLayerUpgrade2("Base Power of increase resource mulitipler.",
                 level => new Decimal(20).mul(level.add(1)),
                 level => new Decimal.pow(2, level.add(1))),
+            mulitB: new FormulaLayerUpgrade2("Mulitipling of Based b this formula.",
+                level => new Decimal(35).mul(level.add(1)),
+                level => new Decimal(1).add(level.mul(new Decimal.pow(1000, this.b)))),
         };
     }
 
     getNGain()
     {
-        return this.t.sqrt().pow(this.b.add(1)).mul(this.a.add(1)).mul(this.upgrades.boostN.apply()).mul(this.upgrades.boostN2.apply()).mul(this.getNBoostFromLayer());
+        return this.t.sqrt().pow(this.b.add(1)).mul(this.a.add(1)).mul(this.upgrades.boostN.apply()).mul(this.upgrades.boostN2.apply()).mul(this.upgrades.mulitB.apply()).mul(this.getNBoostFromLayer());
     }
 
     getTGain()
