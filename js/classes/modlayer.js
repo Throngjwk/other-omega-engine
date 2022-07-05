@@ -53,6 +53,7 @@ class Mod
         if(this.isUnlocked())
         {
             this.points = this.points.add(this.getModGain().mul(dt));
+            this.x = this.x.add(this.getXGain().mul(dt));
         }
     }
 
