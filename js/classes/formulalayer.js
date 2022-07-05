@@ -13,12 +13,18 @@ class FormulaLayer
             bGain: new FormulaLayerUpgrade2("B Gain",
                 level => new Decimal(15).mul(level.add(1)),
                 level => new Decimal(0).add(level)),
+            boostN: new FormulaLayerUpgrade("Boost for a log10(n)",
+                level => new Decimal.pow(1e5, level).mul(1e5),
+                level => new Decimal(1).add(level.mul(this.n.add(10).log10()))),
+            divRMRP: new FormulaLayerUpgrade("Divide of All Resource Mulitiplers and Resource Powerers",
+                level => new Decimal.pow(1000, level).mul(1e9),
+                level => new Decimal.pow(3, level)),
         };
     }
 
     getNGain()
     {
-        return this.t.sqrt().pow(this.b.add(1)).mul(this.a.add(1)).mul(this.getNBoostFromLayer());
+        return this.t.sqrt().pow(this.b.add(1)).mul(this.a.add(1)).mul(this.upgrades.boostN.apply()).mul(this.getNBoostFromLayer());
     }
 
     getTGain()

@@ -45,5 +45,9 @@ Vue.component("formula-layer", {
     <formula-upgrade :upgrade="formula.upgrades.aGain"></formula-upgrade>
     <formula-upgrade2 :upgrade="formula.upgrades.bGain"></formula-upgrade2>
 </div>
+<h3>n Enachers</h3>
+<div class="upgrades">
+    <formula-upgrade :upgrade="formula.upgrades.boostN"></formula-upgrade>
+</div>
 </div>`
 });
