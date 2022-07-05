@@ -21,7 +21,7 @@ class Mod
 
     getXGain()
     {
-        return new Decimal(0).mul(this.getModBoostFromLayer());
+        return this.upgrades.xGain.apply().mul(this.getModBoostFromLayer());
     }
 
     isUnlocked()
