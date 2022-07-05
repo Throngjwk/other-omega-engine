@@ -78,6 +78,10 @@ function tickGame(seconds)
         {
             game.alephLayer.maxAll();
         }
+        if(game.settings.tab === "Mod")
+        {
+            game.mod.maxAll();
+        }
         else
         {
             game.currentLayer.maxAll();
