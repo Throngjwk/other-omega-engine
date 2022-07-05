@@ -18,7 +18,7 @@ class FormulaLayer
 
     getNGain()
     {
-        return this.t.sqrt().mul(this.a.add(1)).mul(this.getNBoostFromLayer());
+        return this.t.sqrt().pow(this.b.add(1)).mul(this.a.add(1)).mul(this.getNBoostFromLayer());
     }
 
     getTGain()
