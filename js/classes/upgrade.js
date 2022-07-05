@@ -271,6 +271,12 @@ class ResourceUpgrade extends AbstractUpgrade
                 return game.alephLayer.aleph;
             case RESOURCE_LAYERCOINS:
                 return game.restackLayer.layerCoins;
+            case RESOURCE_FORMULA_N:
+                return game.formulaLayer.n;
+            case RESOURCE_FORMULA_A:
+                return game.formulaLayer.a;
+            case RESOURCE_FORMULA_B:
+                return game.formulaLayer.b;
         }
     }
 
@@ -283,6 +289,15 @@ class ResourceUpgrade extends AbstractUpgrade
                 break;
             case RESOURCE_LAYERCOINS:
                 game.restackLayer.layerCoins = game.restackLayer.layerCoins.sub(res);
+                break;
+            case RESOURCE_FORMULA_N:
+                game.formulaLayer.n = game.formulaLayer.n.sub(res);
+                break;
+            case RESOURCE_FORMULA_A:
+                game.formulaLayer.a = game.formulaLayer.a.sub(res);
+                break;
+            case RESOURCE_FORMULA_B:
+                game.formulaLayer.b = game.formulaLayer.b.sub(res);
                 break;
         }
     }
@@ -326,6 +341,30 @@ class RestackLayerUpgrade extends ResourceUpgrade
     constructor(description, getPrice, getEffect, cfg)
     {
         super(description, getPrice, getEffect, RESOURCE_LAYERCOINS, cfg);
+    }
+}
+
+class FormulaLayerUpgrade extends ResourceUpgrade
+{
+    constructor(description, getPrice, getEffect, cfg)
+    {
+        super(description, getPrice, getEffect, RESOURCE_FORMULA_N, cfg);
+    }
+}
+
+class FormulaLayerUpgrade2 extends ResourceUpgrade
+{
+    constructor(description, getPrice, getEffect, cfg)
+    {
+        super(description, getPrice, getEffect, RESOURCE_FORMULA_A, cfg);
+    }
+}
+
+class FormulaLayerUpgrade3 extends ResourceUpgrade
+{
+    constructor(description, getPrice, getEffect, cfg)
+    {
+        super(description, getPrice, getEffect, RESOURCE_FORMULA_B, cfg);
     }
 }
 

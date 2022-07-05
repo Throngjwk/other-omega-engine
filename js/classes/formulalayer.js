@@ -3,11 +3,13 @@ class FormulaLayer
     constructor()
     {
         this.n = new Decimal(0);
-        this.t = new Decimal(1)
+        this.a = new Decimal(0);
+        this.b = new Decimal(0);
+        this.t = new Decimal(1);
         this.upgrades = {
-            aGain: new AlephUpgrade("A Gain",
+            aGain: new FormulaLayerUpgrade("A Gain",
                 level => new Decimal.pow(2.25, level).mul(50),
-                level => new Decimal(1).add(level)),
+                level => new Decimal(0).add(level)),
         };
     }
 
@@ -19,6 +21,11 @@ class FormulaLayer
     getTGain()
     {
         return new Decimal(1);
+    }
+
+    FixAGain()
+    {
+        this.a = this.upgrades.aGain.level;
     }
 
     isUnlocked()
