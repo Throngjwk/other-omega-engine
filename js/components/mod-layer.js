@@ -40,6 +40,7 @@ Vue.component("mod-layer", {
 <h3>Variables</h3>
 <div class="upgrades">
     <mod-upgrade :upgrade="mod.upgrades.pointGain"></mod-upgrade>
+    <mod-upgrade :upgrade="mod.upgrades.xGain"></mod-upgrade>
 </div>
 </div>`
 });
