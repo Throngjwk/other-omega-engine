@@ -45,6 +45,7 @@ Vue.component("mod-layer", {
 <h3>x Enachers</h3>
 <div class="upgrades">
     <mod-upgrade2 :upgrade="mod.upgrades.boostAlephBase"></mod-upgrade2>
+    <mod-upgrade2 :upgrade="mod.upgrades.moreX"></mod-upgrade2>
 </div>
 </div>`
 });

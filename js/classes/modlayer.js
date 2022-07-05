@@ -14,6 +14,9 @@ class Mod
             boostAlephBase: new ModUpgrade2("Increase your base boost of aleph",
                 level => new Decimal.pow(1e5, level).mul(100),
                 level => new Decimal(1).add(level.mul(0.2))),
+            moreX: new ModUpgrade2("Increase your log10(x) for x gain.",
+                level => new Decimal.pow(1e20, level).mul(1e5),
+                level => new Decimal(1).add(level.mul(this.x.add(1).log10()))),
         };
     }
 
@@ -24,7 +27,7 @@ class Mod
 
     getXGain()
     {
-        return this.upgrades.xGain.apply().mul(this.getModBoostFromLayer());
+        return this.upgrades.xGain.apply().mul(this.upgrades.moreX.apply()).mul(this.getModBoostFromLayer());
     }
 
     isUnlocked()
