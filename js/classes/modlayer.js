@@ -11,6 +11,9 @@ class Mod
             xGain: new ModUpgrade("Increase your x gain",
                 level => new Decimal.pow(2, level).mul(5000),
                 level => new Decimal(0).add(level.mul(0.5))),
+            boostAlephBase: new ModUpgrade2("Increase your base boost of aleph",
+                level => new Decimal.pow(1e5, level).mul(100),
+                level => new Decimal(1).add(level.mul(0.2))),
         };
     }
 

@@ -1,7 +1,7 @@
 const UPGRADE_RESOURCE = 0, UPGRADE_GENERATOR = 1, UPGRADE_GENMULTI = 2, UPGRADE_POWERGENERATOR = 3, UPGRADE_PRESTIGEREWARD = 4,
     UPGRADE_RESOURCE_TIMELAYER = 5, UPGRADE_GENERATOR_TIMELAYER = 6, UPGRADE_POWERGENERATOR_TIMELAYER = 7;
 
-const RESOURCE_ALEPH = 0, RESOURCE_LAYERCOINS = 1, RESOURCE_MOD = 2;
+const RESOURCE_ALEPH = 0, RESOURCE_LAYERCOINS = 1, RESOURCE_MOD = 2, RESOURCE_MOD_X = 3;
 
 class AbstractUpgrade
 {
@@ -273,6 +273,8 @@ class ResourceUpgrade extends AbstractUpgrade
                 return game.restackLayer.layerCoins;
             case RESOURCE_MOD:
                 return game.mod.points;
+            case RESOURCE_MOD_X:
+                return game.mod.x;
         }
     }
 
@@ -285,6 +287,9 @@ class ResourceUpgrade extends AbstractUpgrade
                 break;
             case RESOURCE_MOD:
                 game.mod.points = game.mod.points.sub(res);
+                break;
+            case RESOURCE_MOD_X:
+                game.mod.x = game.mod.x.sub(res);
                 break;
             case RESOURCE_LAYERCOINS:
                 game.restackLayer.layerCoins = game.restackLayer.layerCoins.sub(res);
@@ -339,6 +344,14 @@ class ModUpgrade extends ResourceUpgrade
     constructor(description, getPrice, getEffect, cfg)
     {
         super(description, getPrice, getEffect, RESOURCE_MOD, cfg);
+    }
+}
+
+class ModUpgrade2 extends ResourceUpgrade
+{
+    constructor(description, getPrice, getEffect, cfg)
+    {
+        super(description, getPrice, getEffect, RESOURCE_MOD_X, cfg);
     }
 }
 
