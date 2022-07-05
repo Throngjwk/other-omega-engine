@@ -49,6 +49,7 @@ Vue.component("formula-layer", {
 <div class="upgrades">
     <formula-upgrade :upgrade="formula.upgrades.boostN"></formula-upgrade>
     <formula-upgrade :upgrade="formula.upgrades.divRMRP"></formula-upgrade>
+    <formula-upgrade :upgrade="formula.upgrades.boostN2"></formula-upgrade>
 </div>
 </div>`
 });

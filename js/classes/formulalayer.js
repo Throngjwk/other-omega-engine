@@ -19,6 +19,9 @@ class FormulaLayer
             divRMRP: new FormulaLayerUpgrade("Divide of All Resource Mulitiplers and Resource Powerers",
                 level => new Decimal.pow(1000, level).mul(1e9),
                 level => new Decimal.pow(3, level)),
+            boostN2: new FormulaLayerUpgrade("Boost for a log10(L)",
+                level => new Decimal.pow(1e9, level).mul(1e6),
+                level => new Decimal.pow(game.metaLayer.layer.add(10).log10(), level)),
         };
     }
 
