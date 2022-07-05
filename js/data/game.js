@@ -102,8 +102,8 @@ const game = {
         new Achievement("Mega N", "Reach 1,000,000 n", "<span>n<sub>1</sub></span>", () => game.formulaLayer.n.gte(1e6)),
         new Achievement("After Dimenisions", "Reach 1e25 n", "<span>n<sub>2</sub></span>", () => game.formulaLayer.n.gte(1e25)),
         new Achievement("Reaction n", "Reach 1e45 n", "<span>n<sub>3</sub></span>", () => game.formulaLayer.n.gte(1e45)),
-        new Achievement("P&#alpha;", "Reach 20 a", "<span>a<sub>1</sub></span>", () => game.formulaLayer.a.gte(20)),
-        new Achievement("QoL-&#alpha;", "Reach 75 a", "<span>a<sub>2</sub></span>", () => game.formulaLayer.a.gte(75)),
+        new Achievement("P&alpha;", "Reach 20 a", "<span>a<sub>1</sub></span>", () => game.formulaLayer.a.gte(20)),
+        new Achievement("QoL-&alpha;", "Reach 75 a", "<span>a<sub>2</sub></span>", () => game.formulaLayer.a.gte(75)),
         new Achievement("Endgame", "Reach layer 1.8e308 and finish "+mod.primaryName+mod.secondaryName, "Ʊ", () => game.metaLayer.layer.gte(Infinities[0])),
     ],
     secretAchievements: [
