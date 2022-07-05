@@ -27,7 +27,7 @@ class FormulaLayer
                 level => new Decimal.pow(2, level.add(1))),
             mulitB: new FormulaLayerUpgrade2("Mulitipling of Based b this formula.",
                 level => new Decimal(35).mul(level.add(1)),
-                level => new Decimal(1).add(level.mul(new Decimal.pow(1000, this.b)))),
+                level => new Decimal(1).add(level.mul(new Decimal.pow(50, this.b)))),
         };
     }
 
