@@ -37,5 +37,8 @@ Vue.component("formula-layer", {
 </div>
 <h3>n(t) = \u221At</h3>
 <h3>Formula Upgrades</h3>
+<div class="upgrades">
+    <formula-upgrade :upgrade="formula.upgrades.aGain"></formula-upgrade>
+</div>
 </div>`
 });
