@@ -244,6 +244,10 @@ onkeydown = e =>
         {
             game.settings.tab = "Automators";
         }
+        if(lc === "f" && game.metaLayer.layer.gte("1.8e308"))
+        {
+            game.settings.tab = "Formula";
+        }
     }
     else
     {
