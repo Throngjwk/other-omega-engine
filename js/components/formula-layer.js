@@ -36,11 +36,13 @@ Vue.component("formula-layer", {
 <div class="tabs">
     <button @click="formula.maxAll()">Max All (M)</button>
     <button @click="formula.FixAGain()">Change a A</button>
+    <button @click="formula.FixAGain()">Change a B</button>
 </div>
-<h3>n(t) = \u221At &times; (a + 1)</h3>
+<h3>n(t) = \u221At<sup>(b + 1)</sup> &times; (a + 1)</h3>
 <h3>Formula Upgrades</h3>
 <div class="upgrades">
     <formula-upgrade :upgrade="formula.upgrades.aGain"></formula-upgrade>
+    <formula-upgrade2 :upgrade="formula.upgrades.bGain"></formula-upgrade2>
 </div>
 </div>`
 });
