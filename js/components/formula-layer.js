@@ -1,4 +1,4 @@
-Vue.component("aleph-layer", {
+Vue.component("formula-layer", {
     data: function()
     {
         return {
