@@ -3,7 +3,7 @@ Vue.component("news-ticker", {
     {
         return {
             messages: [
-                "modding.net",
+                "modding.net wowoowo",
                 "layer name moment",
                 "weird themes",
                 "hey, you could make a mod out of this",
