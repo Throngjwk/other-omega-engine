@@ -499,6 +499,38 @@ p.resource-display > span:first-child{
     text-align: center;
 }
 
+/*Formula*/
+
+.formula-layer .boosts, .formula-layer .resource, .formula-layer .tabs{
+    text-align: center;
+}
+
+.formula-layer .boosts{
+    margin: 1rem 0;
+}
+
+.formula-layer .resource{
+    font-size: 120%;
+}
+
+.formula-layer .resource p:first-child{
+    font-size: 120%;
+}
+
+.formula-layer .upgrades{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.formula-layer .upgrades:last-child .upgrade{
+    width: 20%;
+}
+
+.formula-layer h3{
+    text-align: center;
+}
+
 /*Automator*/
 
 .automator-tab{
