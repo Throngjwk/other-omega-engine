@@ -12,7 +12,7 @@ Vue.component("incremental-mass-layer", {
         },
         isSoftCapped: function()
         {
-            return this.formula.n.gt(1e300);
+            return this.incrementalMass.IMpoints.gt(1e300);
         }
     },
     methods: {

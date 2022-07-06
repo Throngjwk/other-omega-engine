@@ -1,7 +1,7 @@
 var mod = {
     primaryName: "ω",
     secondaryName: "Engine",
-    version: "1.0.1 Themes & Layer",
+    version: "1.0.2 Weird",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
     themes: [
@@ -13,6 +13,9 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"],
         ["Relo Type", "css/themes/relo.css"],
         ["Fark Classic", "css/themes/fark.css"],
+        ["Sugar", "css/themes/sugar.css"],
+        ["Special 1", "css/themes/special.css"],
+        ["Special 2", "css/themes/special.css"],
     ],
     layerNames: [
         ["Trate-Layers",
@@ -65,6 +68,8 @@ var mod = {
         ["Save 2", "2"],
         ["Save 3", "3"],
         ["Save 4", "4"],
+        ["Save 5", "5"],
+        ["Save 6", "6"],
     ],
     debugClasses: []
 }

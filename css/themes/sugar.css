@@ -1,0 +1,22 @@
+:root{
+    --background-body: #a2b961;
+    --background-header: #dbd11d;
+    --color-base: #ab4545;
+    --color-primary: #d000ff;
+    --color-hover: #ba4444;
+    --color-hover-strong: #c07373;
+    --color-contrast: #c27979;
+    --color-success: #4bcb52;
+    --button-dark: #610ae3;
+    --notification--error: #d5f51f;
+    --notification--success: #3e3265;
+    --notification--special: #0afafe;
+}
+
+input[type=number] {
+    color:blue
+}
+
+input[type=text] {
+    color:blue
+}

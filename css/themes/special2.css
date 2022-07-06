@@ -1,0 +1,19 @@
+:root{
+    --background-body: #afd24f;
+    --background-header: #cac567;
+    --color-base: #4584ab;
+    --color-primary: #ff3c00;
+    --color-hover: #9e8c8c;
+    --color-hover-strong: #3bcc51;
+    --color-contrast: #df1b1b;
+    --color-success: #cba54b;
+    --button-dark: #50268f;
+    --notification--error: #1fe7f5;
+    --notification--success: #7162a4;
+    --notification--special: #169294;
+}
+
+.aleph {
+    color:rgb(45, 148, 139);
+    font-family: monospace;
+}

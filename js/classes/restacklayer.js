@@ -144,13 +144,13 @@ class ReStackLayer
                     }),
             ],
             [
-                new RestackLayerUpgrade("Template",
-                    level => new Decimal("1ee1000"),
+                new RestackLayerUpgrade("Unlock Incrementak Mass",
+                    level => new Decimal("1ee355"),
                     level => level.gt(0), {
                         maxLevel: 1,
                         getEffectDisplay: function()
                         {
-                            return this.level.gt(0) ? "Doesn't reset" : "Resets";
+                            return this.level.gt(0) ? "Locked" : "Unlocked";
                         }
                     }),
             ]
