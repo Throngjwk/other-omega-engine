@@ -17,12 +17,12 @@ class IncrementalMassLayer
 
     isUnlocked()
     {
-        return game.restackLayer.upgradesTreeNames.template3.leve.gte(1);
+        return game.restackLayer.upgradeTreeNames.template3.leve.gte(1);
     }
 
     getIncrementalMassBoostFromLayer()
     {
-        if(game.restackLayer.upgradesTreeNames.template3.leve.gte(1)) {
+        if(game.restackLayer.upgradeTreeNames.template3.leve.gte(1)) {
          return new Decimal(1) 
         } else {
             return new Decimal(0)
