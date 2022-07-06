@@ -1,6 +1,11 @@
 Vue.component("changelog-tab", {
     template: `<div class="changelog-tab">
     <guide-item>
+    <template v-slot:title>v1.0.2.1</template>
+    <template v-slot:text>25 New Themes<br>3 New Names.
+    </template>
+    </guide-item>
+    <guide-item>
     <template v-slot:title>v1.0.2 Weird</template>
     <template v-slot:text>3 New Themes.<br>2 New Saves<br>Imporve Incremental mass new content coming soon..
     </template>
