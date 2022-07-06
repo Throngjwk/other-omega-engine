@@ -23,7 +23,7 @@ class IncrementalMassLayer
 
     getIncrementalMassGain()
     {
-        return this.upgrades.IMGain;
+        return this.upgrades.IMGain.mul(this.getIncrementalMassBoostFromLayer);
     }
 
     isUnlocked()
@@ -52,13 +52,13 @@ class IncrementalMassLayer
     {
         if(this.isUnlocked())
         {
-            this.IMpoints = this.aleph.add(this.getAlephGain().mul(dt));
+            this.IMpoints = this.IMpoints.add(this.getIncrementalMassGain().mul(dt));
         }
     }
 
     loadFromSave(obj)
     {
-        this.IMpoints = obj.aleph;
+        this.IMpoints = obj.IMpoints;
         for(const k of Object.getOwnPropertyNames(obj.upgrades))
         {
             if(this.upgrades[k])
