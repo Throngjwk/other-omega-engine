@@ -8,17 +8,6 @@ class IncrementalMassLayer
                 level => Decimal.pow(1.3, level).mul(100),
                 level => Decimal.pow(1.215, level)),
         };
-        this.upgradeTree = [
-           [
-                new IncrementalMassLayerUpgrade("Increase your incremental mass gain",
-                level => Decimal.pow(1.4, level).mul(500),
-                level => Decimal.pow(1.2, level)),
-           ]
-        ]
-        this.upgradeTree[1][0].setRequirements([this.upgradeTree[0][0]], [this.upgradeTree[1][1]]);
-        this.upgradesTreeNames = {
-            IMGain2: this.upgradeTree[0][0],
-        }
     }
 
     getIncrementalMassGain()

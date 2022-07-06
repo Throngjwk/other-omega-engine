@@ -25,10 +25,13 @@ Vue.component("incremental-mass-layer", {
         <p>You have {{formatNumber(incrementalMass.IMpoints, 2, 2, 1e9)}} <span class="aleph">ℵ</span></p>
         <p>You get {{formatNumber(incrementalMass.getIncrementalMassGain(), 2, 2, 1e9)}} <span class="aleph">ℵ</span> every second</p>
 </div>
+<div class="upgrades">
+        <incremental-mass-upgrade :upgrade="incrementalMass.upgrades.IMGain"></incremental-mass-upgrade>
+</div>
     </div>
     <div v-else>
         <h2>Incremental Mass Disbaled</h2>
-        <h3>Sorry i think reach restack layer unlcok incremental mass.</h3>
+        <h3>Sorry i think reach restack layer unlock incremental mass.</h3>
     </div>
 </div>`
 });
