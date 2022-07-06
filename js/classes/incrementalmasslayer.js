@@ -22,11 +22,7 @@ class IncrementalMassLayer
 
     getIncrementalMassBoostFromLayer()
     {
-        if(game.restackLayer.upgradeTreeNames.template3.leve.gte(1)) {
-         return new Decimal(1) 
-        } else {
-            return new Decimal(0)
-        };
+        return new Decimal(1)
     }
 
     maxAll()
