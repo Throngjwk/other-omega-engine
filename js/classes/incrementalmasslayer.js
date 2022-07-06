@@ -17,7 +17,7 @@ class IncrementalMassLayer
 
     isUnlocked()
     {
-        return game.restackLayer.upgradeTreeNames.template3.leve.gte(1);
+        return game.restackLayer.upgradeTreeNames.template3.level.gte(1);
     }
 
     getIncrementalMassBoostFromLayer()
@@ -35,7 +35,7 @@ class IncrementalMassLayer
 
     tick(dt)
     {
-        if(true)
+        if(this.isUnlocked())
         {
             this.IMpoints = this.IMpoints.add(this.getIncrementalMassGain().mul(dt));
         }
