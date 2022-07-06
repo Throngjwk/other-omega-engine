@@ -15,7 +15,7 @@ var mod = {
         ["Fark Classic", "css/themes/fark.css"],
         ["Sugar", "css/themes/sugar.css"],
         ["Special 1", "css/themes/special.css"],
-        ["Special 2", "css/themes/special.css"],
+        ["Special 2", "css/themes/special2.css"],
     ],
     layerNames: [
         ["Trate-Layers",
