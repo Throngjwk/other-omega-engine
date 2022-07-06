@@ -6,7 +6,7 @@ Vue.component("incremental-mass-layer", {
         }
     },
     computed: {
-        unlockIncrementalMass: function()
+        unlockedIncrementalMass: function()
         {
             return game.restackLayer.upgradeTreeNames.template3.level.gte(1);
         },
