@@ -377,7 +377,7 @@ class IncrementalMassLayerUpgrade extends ResourceUpgrade
 {
     constructor(description, getPrice, getEffect, cfg)
     {
-        super(description, getPrice, getEffect, RESOURCE_FORMULA_B, cfg);
+        super(description, getPrice, getEffect, RESOURCE_INCREMENTAL_MASS, cfg);
     }
 }
 
