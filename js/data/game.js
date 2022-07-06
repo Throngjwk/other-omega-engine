@@ -116,6 +116,7 @@ const game = {
     restackLayer: new ReStackLayer(),
     metaLayer: new MetaLayer(),
     formulaLayer:new FormulaLayer(),
+    incrementalMassLayer:new IncrementalMassLayer(),
     currentLayer: null,
     currentChallenge: null,
     notifications: [],

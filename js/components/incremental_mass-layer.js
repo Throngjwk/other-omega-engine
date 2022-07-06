@@ -2,7 +2,7 @@ Vue.component("incremental-mass-layer", {
     data: function()
     {
         return {
-            formula: game.formulaLayer
+            incrementalMass: game.incrementalMassLayer
         }
     },
     computed: {
@@ -21,7 +21,10 @@ Vue.component("incremental-mass-layer", {
     },
     template: `<div class="incremental-mass-layer">
     <div v-if="unlockedIncrementalMass">
-        <p>Your boost for layer, translated to a x{{formatNumber(formula.getNBoostFromLayer(), 2, 2)}} Boost on <span class="aleph">ℵ</span> gain</p>
+    <div class="resource">
+        <p>You have {{formatNumber(incrementalMass.IMpoints, 2, 2, 1e9)}} <span class="aleph">ℵ</span></p>
+        <p>You get {{formatNumber(incrementalMass.getIncrementalMassGain(), 2, 2, 1e9)}} <span class="aleph">ℵ</span> every second</p>
+</div>
     </div>
     <div v-else>
         <h2>Incremental Mass Disbaled</h2>

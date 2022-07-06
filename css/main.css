@@ -531,6 +531,46 @@ p.resource-display > span:first-child{
     text-align: center;
 }
 
+
+/*Incremental Mass*/
+
+/*Formula*/
+
+.incremental-mass-layer .boosts, .incremental-mass-layer .resource, .incremental-mass-layer .tabs{
+    text-align: center;
+}
+
+.incremental-mass-layer .boosts{
+    margin: 1rem 0;
+}
+
+.incremental-mass-layer .resource{
+    font-size: 120%;
+}
+
+.incremental-mass-layer .resource p:first-child{
+    font-size: 120%;
+}
+
+.incremental-mass-layer .upgrades{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.incremental-mass-layer .upgrades:last-child .upgrade{
+    width: 20%;
+}
+
+.incremental-mass-layer h3{
+    text-align: center;
+}
+
+.incremental-mass-layer h2{
+    text-align: center;
+}
+
+
 /*Automator*/
 
 .automator-tab{

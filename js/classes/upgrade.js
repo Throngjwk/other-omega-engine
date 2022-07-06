@@ -1,7 +1,7 @@
 const UPGRADE_RESOURCE = 0, UPGRADE_GENERATOR = 1, UPGRADE_GENMULTI = 2, UPGRADE_POWERGENERATOR = 3, UPGRADE_PRESTIGEREWARD = 4,
     UPGRADE_RESOURCE_TIMELAYER = 5, UPGRADE_GENERATOR_TIMELAYER = 6, UPGRADE_POWERGENERATOR_TIMELAYER = 7;
 
-const RESOURCE_ALEPH = 0, RESOURCE_LAYERCOINS = 1, RESOURCE_FORMULA_N = 2, RESOURCE_FORMULA_A = 3, RESOURCE_FORMULA_B = 4
+const RESOURCE_ALEPH = 0, RESOURCE_LAYERCOINS = 1, RESOURCE_FORMULA_N = 2, RESOURCE_FORMULA_A = 3, RESOURCE_FORMULA_B = 4, RESOURCE_INCREMENTAL_MASS = 5
 
 class AbstractUpgrade
 {
@@ -277,6 +277,8 @@ class ResourceUpgrade extends AbstractUpgrade
                 return game.formulaLayer.a;
             case RESOURCE_FORMULA_B:
                 return game.formulaLayer.b;
+            case RESOURCE_INCREMENTAL_MASS:
+                return game.incrementalMassLayer.IMpoints;
         }
     }
 
@@ -298,6 +300,9 @@ class ResourceUpgrade extends AbstractUpgrade
                 break;
             case RESOURCE_FORMULA_B:
                 game.formulaLayer.b = game.formulaLayer.b.sub(res);
+                break;
+            case RESOURCE_INCREMENTAL_MASS:
+                game.incrementalMassLayer.IMpoints = game.incrementalMassLayer.IMpoints.sub(res);
                 break;
         }
     }
@@ -361,6 +366,14 @@ class FormulaLayerUpgrade2 extends ResourceUpgrade
 }
 
 class FormulaLayerUpgrade3 extends ResourceUpgrade
+{
+    constructor(description, getPrice, getEffect, cfg)
+    {
+        super(description, getPrice, getEffect, RESOURCE_FORMULA_B, cfg);
+    }
+}
+
+class IncrementalMassLayerUpgrade extends ResourceUpgrade
 {
     constructor(description, getPrice, getEffect, cfg)
     {
