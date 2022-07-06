@@ -159,6 +159,7 @@ function tickGame(seconds)
     game.restackLayer.tick(seconds);
     game.metaLayer.tick(seconds);
     game.formulaLayer.tick(seconds);
+    game.incrementalMassLayer.tick(seconds);
 }
 
 function simulateGameTime(seconds)
