@@ -12,7 +12,7 @@ class IncrementalMassLayer
 
     getIncrementalMassGain()
     {
-        return this.upgrades.IMGain.mul(this.getIncrementalMassBoostFromLayer());
+        return this.upgrades.IMGain.apply().mul(this.getIncrementalMassBoostFromLayer());
     }
 
     isUnlocked()
