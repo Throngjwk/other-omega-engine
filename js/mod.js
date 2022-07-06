@@ -1,7 +1,7 @@
 var mod = {
     primaryName: "ω",
     secondaryName: "Engine",
-    version: "1.0.0 Update",
+    version: "1.0.1 Themes & Layer",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
     themes: [
@@ -10,9 +10,17 @@ var mod = {
         ["Neon", "css/themes/neon.css"],
         ["Godot Blue", "css/themes/darkblue.css"],
         ["Halloween", "css/themes/spooky.css"],
-        ["eXPerience", "css/themes/experience.css"]
+        ["eXPerience", "css/themes/experience.css"],
+        ["Relo Type", "css/themes/relo.css"],
+        ["Fark Classic", "css/themes/fark.css"],
     ],
     layerNames: [
+        ["Trate-Layers",
+        [
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+            "0123456789",
+            "abcd"
+        ]],
         ["Ω-Lλγers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",

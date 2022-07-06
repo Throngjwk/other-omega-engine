@@ -1,0 +1,18 @@
+:root{
+    --background-body: #a4cf30;
+    --background-header: #b49260;
+    --color-base: #a73030;
+    --color-primary: #c222e6;
+    --color-hover: #da1f1f;
+    --color-hover-strong: #dd6262;
+    --color-contrast: #ed5f5f;
+    --color-success: #55df5c;
+    --button-dark: #4cbc2f;
+    --notification--error: #37bc84;
+    --notification--success: #27e6ff;
+    --notification--special: #4ee858;
+}
+
+.aleph {
+    color: blue;
+}
