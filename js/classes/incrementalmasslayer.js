@@ -35,7 +35,7 @@ class IncrementalMassLayer
 
     tick(dt)
     {
-        if(this.isUnlocked())
+        if(true)
         {
             this.IMpoints = this.IMpoints.add(this.getIncrementalMassGain().mul(dt));
         }
