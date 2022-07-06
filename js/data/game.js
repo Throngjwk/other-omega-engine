@@ -104,7 +104,7 @@ const game = {
         new Achievement("Reaction n", "Reach 1e45 n", "<span>n<sub>3</sub></span>", () => game.formulaLayer.n.gte(1e45)),
         new Achievement("P&alpha;", "Reach 20 a", "<span>a<sub>1</sub></span>", () => game.formulaLayer.a.gte(20)),
         new Achievement("QoL-&alpha;", "Reach 75 a", "<span>a<sub>2</sub></span>", () => game.formulaLayer.a.gte(75)),
-        new Achievement("Endgame", "Reach layer 1.8e308 and finish "+mod.primaryName+mod.secondaryName, "Ʊ", () => game.metaLayer.layer.gte(Infinities[0])),
+        new Achievement("Endgame", "Reach layer 1e346 and finish "+mod.primaryName+mod.secondaryName, "Ʊ", () => game.metaLayer.layer.gte("1e346")),
     ],
     secretAchievements: [
         new Achievement("A very long wait...", "Have a game with over 3 months of time", "...", () => game.timeSpent > 50803200),
