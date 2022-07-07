@@ -1,17 +1,17 @@
 Vue.component("endgame-tab", {
     computed: {
-        timeSpent: function() {
-            time = game.timeSpent;
-            formattedTime = functions.formatTime(time)
-            return formattedTime
+        layer: function() {
+            layer = game.metaLayer.layer;
+            return layer
         },
     },
     methods: {
         hardResetGame: () => functions.hardResetGame(),
+        layerHack: () => game.metaLayer.layer = new Decimal("1e400")
     },
     template: `<div id="endgame">
     <h2><span class="omega">You</span> Win!</h2>
-    <p>You beat the game in <span class="omega">{{timeSpent}}</span><br>
-    <button onclick="game.settings.tab = 'Layers'">Continue</button> <button @click="hardResetGame()">Wipe Game</button></p>
+    <p>Win Win! at game than <span class="omega">{{layer}}</span><br>
+    <button onclick="game.settings.tab = 'Layers'">Continue</button> <button @click="hardResetGame()">Wipe Game</button> <button @click="layerHack()">Layer to 1e400</button></p>
 </div>`
 })
