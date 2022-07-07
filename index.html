@@ -41,6 +41,7 @@
                 <layer-locked-button v-if="isLayerCategory === 'Layers'" @click="settings.tab = 'ReStack'" :layerid="9"><img alt="R" class="inline" src="images/layercoin.png"/> ReStack</layer-locked-button>
                 <layer-locked-button v-if="isMeta && isLayerCategory === 'Layers'" @click="settings.tab = 'Formula'" :layerid="1e308"><span class="omega">F<sub>log<sub>10</sub>(36)</sub></span> Formula</layer-locked-button>
                 <layer-locked-button v-if="isLayerCategory === 'Layers'" @click="settings.tab = 'Incremental Mass'" :layerid="2"><span class="omega">IM</span> Incremental Mass</layer-locked-button>
+                <layer-locked-button v-if="isMeta && isLayerCategory === 'Layers'" @click="settings.tab = 'Downloads'" :layerid="2"><img src="download.svg" class="inline"></img> Download</layer-locked-button>
                 <button v-if="isLayerCategory === 'Guide'" @click="settings.tab = 'Changelog'"><img alt="C" class="inline" src="favicon.png"> Changelog</button>
                 <button v-if="isLayerCategory === 'Guide'" @click="settings.tab = 'Engine Changelog'"><img alt="EC" class="inline" src="https://jwklong.github.io/omega-engine/favicon.png"> Engine Changelog</button>
                 <button v-if="isLayerCategory === 'Achievements && game.secretAchievements.filter(ach => ach.isCompleted).length > 0'" @click="settings.tab = 'Secret Achievements'"><img alt="Sa" class="inline" src="images/star.svg"> Secret Achievements</button>
@@ -70,6 +71,7 @@
         <endgame-tab v-if="settings.tab === 'Endgame'"></endgame-tab>
         <formula-layer v-if="settings.tab === 'Formula'"></formula-layer>
         <incremental-mass-layer v-if="settings.tab === 'Incremental Mass'"></increnental-mass-layer>
+        <download-layer v-if="settings.tab === 'Downloads'"><ui-mathjax-label>$$\sqrt{20}$$</ui-mathjax-label></download-layer>
     </main>
     <footer>
         <div>
