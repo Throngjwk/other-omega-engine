@@ -44,6 +44,24 @@ var mod = {
         ["Xas", "css/themes/xas.css"],
     ],
     layerNames: [
+        ["Reidle Layers",
+        [
+            "ReomegaEngine",
+            "wow",
+            "ABCD"
+        ]],
+        ["Idle Layers 2",
+        [
+            "OmegaEngine2",
+            "wow",
+            "ABCD"
+        ]],
+        ["Bar Layers",
+        [
+            "P123",
+            "123456789",
+            "ABCD"
+        ]],
         ["Such-Layers",
         [
             "Au",
