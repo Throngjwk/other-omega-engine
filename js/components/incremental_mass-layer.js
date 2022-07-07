@@ -27,6 +27,7 @@ Vue.component("incremental-mass-layer", {
 </div>
 <div class="upgrades">
         <incremental-mass-upgrade :upgrade="incrementalMass.upgrades.IMGain"></incremental-mass-upgrade>
+        <incremental-mass-upgrade :upgrade="incrementalMass.upgrades.IMGain2"></incremental-mass-upgrade>
 </div>
     </div>
     <div v-else>

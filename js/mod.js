@@ -1,7 +1,7 @@
 var mod = {
     primaryName: "ω",
     secondaryName: "Engine",
-    version: "1.0.2.2 Mathjax & UI API",
+    version: "1.0.2.3",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
     themes: [
@@ -41,8 +41,27 @@ var mod = {
         ["Wetta 23", "css/themes/wetta23.css"],
         ["Wetta 24", "css/themes/wetta24.css"],
         ["Wetta 25", "css/themes/wetta25.css"],
+        ["Xas", "css/themes/xas.css"],
     ],
     layerNames: [
+        ["Reidle Layers",
+        [
+            "ReomegaEngine",
+            "wow",
+            "ABCD"
+        ]],
+        ["Idle Layers 2",
+        [
+            "OmegaEngine2",
+            "wow",
+            "ABCD"
+        ]],
+        ["Bar Layers",
+        [
+            "P123",
+            "123456789",
+            "ABCD"
+        ]],
         ["Such-Layers",
         [
             "Au",
