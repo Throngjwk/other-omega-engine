@@ -7,12 +7,15 @@ class IncrementalMassLayer
             IMGain: new IncrementalMassLayerUpgrade("Increase your incremental mass gain",
                 level => Decimal.pow(1.3, level).mul(100),
                 level => Decimal.pow(1.215, level)),
+            IMGain2: new IncrementalMassLayerUpgrade("Increase your incremental mass mulit gain",
+                level => Decimal.pow(10, level).mul(100),
+                level => Decimal.pow(2, level)),
         };
     }
 
     getIncrementalMassGain()
     {
-        return this.upgrades.IMGain.apply().mul(this.getIncrementalMassBoostFromLayer());
+        return this.upgrades.IMGain.apply().mul(this.upgrades.IMGain2.apply()).mul(this.getIncrementalMassBoostFromLayer());
     }
 
     isUnlocked()
