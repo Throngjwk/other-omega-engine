@@ -570,6 +570,142 @@ p.resource-display > span:first-child{
     text-align: center;
 }
 
+/*UI*/
+
+ui-layer {
+    text-align: center;
+}
+ui-layer ui-label {
+    font-size: 0.2em;
+}
+
+ui-layer ui-label.bold {
+    font-size: 0.2em;
+    font-weight: bold;
+}
+
+ui-layer ui-label.absolute {
+    font-size: 0.2em;
+    position: absolute;
+}
+
+ui-layer ui-shape.square {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+ui-layer ui-shape.rectangle {
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+}
+
+ui-layer ui-shape.circle {
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+ui-layer ui-shape.triangle-up {
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+
+ui-layer ui-slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+ui-layer ui-entry {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-entry.disabled {
+    display: block;
+    cursor: not-allowed;
+}
+
+ui-layer ui-mathjax-label {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-heading[type="h1"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-heading[type="h2"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-heading[type="h3"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-heading[type="h4"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-heading[type="h5"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-heading[type="h6"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-button[tag="p"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-button[tag="span"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-button[tag="div"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-button[tag="h6"] {
+    display: block;
+    cursor: pointer;
+}
+
+ui-layer ui-slider.absolute {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    position: absolute;
+}
+
 
 /*Automator*/
 

@@ -1,6 +1,11 @@
 Vue.component("changelog-tab", {
     template: `<div class="changelog-tab">
     <guide-item>
+    <template v-slot:title>v1.0.2.2 Mathjax & UI API</template>
+    <template v-slot:text>Add A UI for Omega engine.<br>Support Imporved Mathjax on Omega Engine UI.<br>Add 2 Generators for Alpha.
+    </template>
+    </guide-item>
+    <guide-item>
     <template v-slot:title>v1.0.2.1</template>
     <template v-slot:text>25 New Themes<br>3 New Names.
     </template>
