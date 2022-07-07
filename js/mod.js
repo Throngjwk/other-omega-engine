@@ -1,7 +1,7 @@
 var mod = {
     primaryName: "ω",
     secondaryName: "Engine",
-    version: "1.0.2.2 Mathjax & UI API",
+    version: "1.0.2.3",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
     themes: [
