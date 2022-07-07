@@ -41,6 +41,7 @@ var mod = {
         ["Wetta 23", "css/themes/wetta23.css"],
         ["Wetta 24", "css/themes/wetta24.css"],
         ["Wetta 25", "css/themes/wetta25.css"],
+        ["Xas", "css/themes/xas.css"],
     ],
     layerNames: [
         ["Such-Layers",
