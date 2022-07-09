@@ -325,3 +325,907 @@
         font-size: 1px;
     }
 }
+
+@keyframes aleph {
+    1% {
+        color: #0044ff;
+    }
+    2% {
+        color: #5975c1;
+    }
+    3% {
+        color: #425894;
+    }
+    4% {
+        color: #313b57;
+    }
+    5% {
+        color: #5170c3;
+    }
+    6% {
+        color: #614976;
+    }
+    7% {
+        color: #5fb04f;
+    }
+    8% {
+        color: #6a7fb7;
+    }
+    10% {
+        color: #5eff00;
+    }
+    11% {
+        color: #98ce79;
+    }
+    12% {
+        color: #b1d69c;
+    }
+    13% {
+        color: #80a36b;
+    }
+    14% {
+        color: #688c54;
+    }
+    15% {
+        color: #6aa846;
+    }
+    16% {
+        color: #b1d19f;
+    }
+    17% {
+        color: #d4ff00;
+    }
+    18% {
+        color: #d4ff00;
+    }
+    19% {
+        color: #d4ff00;
+    }
+    20% {
+        color: #8a9458;
+    }
+    21% {
+        color: #383fa2;
+    }
+    22% {
+        color: #75a6ac;
+    }
+    23% {
+        color: #85b7a4;
+    }
+    24% {
+        color: #7bf5c6;
+    }
+    25% {
+        color: #9cb785;
+    }
+    26% {
+        color: #599f84;
+    }
+    27% {
+        color: #4d8b73;
+    }
+    28% {
+        color: #50a584;
+    }
+    29% {
+        color: #3dd851;
+    }
+    30% {
+        color: #539f5d;
+    }
+    31% {
+        color: #539f5d;
+    }
+    32% {
+        color: #5f9265;
+    }
+    33% {
+        color: #59b165;
+    }
+    34% {
+        color: #59539f;
+    }
+    35% {
+        color: #47ab55;
+    }
+    36% {
+        color: #2c6033;
+    }
+    37% {
+        color: #4776ab;
+    }
+    38% {
+        color: #c7be81;
+    }
+    39% {
+        color: #4f9f5a;
+    }
+    40% {
+        color: #aba647;
+    }
+    41% {
+        color: #7aad81;
+    }
+    42% {
+        color: #4771ab;
+    }
+    43% {
+        color: #7da1d4;
+    }
+    44% {
+        color: #2c69bf;
+    }
+    45% {
+        color: #698fc4;
+    }
+    46% {
+        color: #3569b1;
+    }
+    47% {
+        color: #3a6baf;
+    }
+    48% {
+        color: #883a88;
+    }
+    49% {
+        color: #4eb4bf;
+    }
+    50% {
+        color: #cab86b;
+    }
+    51% {
+        color: #d8cd9e;
+    }
+    52% {
+        color: #c0b589;
+    }
+    53% {
+        color: #578da4;
+    }
+    54% {
+        color: #8e6a9f;
+    }
+    55% {
+        color: #676a9f;
+    }
+    56% {
+        color: #726ea6;
+    }
+    57% {
+        color: #6c83a7;
+    }
+    58% {
+        color: #405c88;
+    }
+    59% {
+        color: #92e35f;
+    }
+    60% {
+        color: #519e32;
+    }
+    61% {
+        color: #87bd72;
+    }
+    62% {
+        color: #7ca26d;
+    }
+    63% {
+        color: #5dafac;
+    }
+    64% {
+        color: #66805b;
+    }
+    65% {
+        color: #52329e;
+    }
+    66% {
+        color: #6a9658;
+    }
+    67% {
+        color: #497979;
+    }
+    68% {
+        color: #7e88cb;
+    }
+    69% {
+        color: #505b9e;
+    }
+    70% {
+        color: #7ecba1;
+    }
+    71% {
+        color: #518d6c;
+    }
+    72% {
+        color: #46745b;
+    }
+    73% {
+        color: #7ea2cb;
+    }
+    74% {
+        color: #30518e;
+    }
+    75% {
+        color: #783787;
+    }
+    76% {
+        color: #a960ba;
+    }
+    77% {
+        color: #378774;
+    }
+    78% {
+        color: #995fa5;
+    }
+    79% {
+        color: #30c180;
+    }
+    80% {
+        color: #9cddbe;
+    }
+    81% {
+        color: #3a7156;
+    }
+    82% {
+        color: #4f357c;
+    }
+    83% {
+        color: #516882;
+    }
+    84% {
+        color: #5a6287;
+    }
+    85% {
+        color: #705db3;
+    }
+    86% {
+        color: #37854c;
+    }
+    87% {
+        color: #447a8d;
+    }
+    88% {
+        color: #8bc089;
+    }
+    89% {
+        color: #91a038;
+    }
+    90% {
+        color: #4673ce;
+    }
+    91% {
+        color: #2c364a;
+    }
+    92% {
+        color: #26c618;
+    }
+    93% {
+        color: #9c739f;
+    }
+    94% {
+        color: #4c765b;
+    }
+    95% {
+        color: #7ce5a6;
+    }
+    96% {
+        color: #58916f;
+    }
+    97% {
+        color: #6c8e7a;
+    }
+    98% {
+        color: #416284;
+    }
+    99% {
+        color: #435a8f;
+    }
+    100% {
+        color: #297d15;
+    }
+}
+
+@keyframes restack {
+    1% {
+        color: #0044ff;
+    }
+    2% {
+        color: #5975c1;
+    }
+    3% {
+        color: #425894;
+    }
+    4% {
+        color: #313b57;
+    }
+    5% {
+        color: #5170c3;
+    }
+    6% {
+        color: #614976;
+    }
+    7% {
+        color: #5fb04f;
+    }
+    8% {
+        color: #6a7fb7;
+    }
+    10% {
+        color: #5eff00;
+    }
+    11% {
+        color: #98ce79;
+    }
+    12% {
+        color: #b1d69c;
+    }
+    13% {
+        color: #80a36b;
+    }
+    14% {
+        color: #688c54;
+    }
+    15% {
+        color: #6aa846;
+    }
+    16% {
+        color: #b1d19f;
+    }
+    17% {
+        color: #d4ff00;
+    }
+    18% {
+        color: #d4ff00;
+    }
+    19% {
+        color: #d4ff00;
+    }
+    20% {
+        color: #8a9458;
+    }
+    21% {
+        color: #383fa2;
+    }
+    22% {
+        color: #75a6ac;
+    }
+    23% {
+        color: #85b7a4;
+    }
+    24% {
+        color: #7bf5c6;
+    }
+    25% {
+        color: #9cb785;
+    }
+    26% {
+        color: #599f84;
+    }
+    27% {
+        color: #4d8b73;
+    }
+    28% {
+        color: #50a584;
+    }
+    29% {
+        color: #3dd851;
+    }
+    30% {
+        color: #539f5d;
+    }
+    31% {
+        color: #539f5d;
+    }
+    32% {
+        color: #5f9265;
+    }
+    33% {
+        color: #59b165;
+    }
+    34% {
+        color: #59539f;
+    }
+    35% {
+        color: #47ab55;
+    }
+    36% {
+        color: #2c6033;
+    }
+    37% {
+        color: #4776ab;
+    }
+    38% {
+        color: #c7be81;
+    }
+    39% {
+        color: #4f9f5a;
+    }
+    40% {
+        color: #aba647;
+    }
+    41% {
+        color: #7aad81;
+    }
+    42% {
+        color: #4771ab;
+    }
+    43% {
+        color: #7da1d4;
+    }
+    44% {
+        color: #2c69bf;
+    }
+    45% {
+        color: #698fc4;
+    }
+    46% {
+        color: #3569b1;
+    }
+    47% {
+        color: #3a6baf;
+    }
+    48% {
+        color: #883a88;
+    }
+    49% {
+        color: #4eb4bf;
+    }
+    50% {
+        color: #cab86b;
+    }
+    51% {
+        color: #d8cd9e;
+    }
+    52% {
+        color: #c0b589;
+    }
+    53% {
+        color: #578da4;
+    }
+    54% {
+        color: #8e6a9f;
+    }
+    55% {
+        color: #676a9f;
+    }
+    56% {
+        color: #726ea6;
+    }
+    57% {
+        color: #6c83a7;
+    }
+    58% {
+        color: #405c88;
+    }
+    59% {
+        color: #92e35f;
+    }
+    60% {
+        color: #519e32;
+    }
+    61% {
+        color: #87bd72;
+    }
+    62% {
+        color: #7ca26d;
+    }
+    63% {
+        color: #5dafac;
+    }
+    64% {
+        color: #66805b;
+    }
+    65% {
+        color: #52329e;
+    }
+    66% {
+        color: #6a9658;
+    }
+    67% {
+        color: #497979;
+    }
+    68% {
+        color: #7e88cb;
+    }
+    69% {
+        color: #505b9e;
+    }
+    70% {
+        color: #7ecba1;
+    }
+    71% {
+        color: #518d6c;
+    }
+    72% {
+        color: #46745b;
+    }
+    73% {
+        color: #7ea2cb;
+    }
+    74% {
+        color: #30518e;
+    }
+    75% {
+        color: #783787;
+    }
+    76% {
+        color: #a960ba;
+    }
+    77% {
+        color: #378774;
+    }
+    78% {
+        color: #995fa5;
+    }
+    79% {
+        color: #30c180;
+    }
+    80% {
+        color: #9cddbe;
+    }
+    81% {
+        color: #3a7156;
+    }
+    82% {
+        color: #4f357c;
+    }
+    83% {
+        color: #516882;
+    }
+    84% {
+        color: #5a6287;
+    }
+    85% {
+        color: #705db3;
+    }
+    86% {
+        color: #37854c;
+    }
+    87% {
+        color: #447a8d;
+    }
+    88% {
+        color: #8bc089;
+    }
+    89% {
+        color: #91a038;
+    }
+    90% {
+        color: #4673ce;
+    }
+    91% {
+        color: #2c364a;
+    }
+    92% {
+        color: #26c618;
+    }
+    93% {
+        color: #9c739f;
+    }
+    94% {
+        color: #4c765b;
+    }
+    95% {
+        color: #7ce5a6;
+    }
+    96% {
+        color: #58916f;
+    }
+    97% {
+        color: #6c8e7a;
+    }
+    98% {
+        color: #416284;
+    }
+    99% {
+        color: #435a8f;
+    }
+    100% {
+        color: #297d15;
+    }
+}
+
+@keyframes meta {
+    1% {
+        color: #0044ff;
+    }
+    2% {
+        color: #5975c1;
+    }
+    3% {
+        color: #425894;
+    }
+    4% {
+        color: #313b57;
+    }
+    5% {
+        color: #5170c3;
+    }
+    6% {
+        color: #614976;
+    }
+    7% {
+        color: #5fb04f;
+    }
+    8% {
+        color: #6a7fb7;
+    }
+    10% {
+        color: #5eff00;
+    }
+    11% {
+        color: #98ce79;
+    }
+    12% {
+        color: #b1d69c;
+    }
+    13% {
+        color: #80a36b;
+    }
+    14% {
+        color: #688c54;
+    }
+    15% {
+        color: #6aa846;
+    }
+    16% {
+        color: #b1d19f;
+    }
+    17% {
+        color: #d4ff00;
+    }
+    18% {
+        color: #d4ff00;
+    }
+    19% {
+        color: #d4ff00;
+    }
+    20% {
+        color: #8a9458;
+    }
+    21% {
+        color: #383fa2;
+    }
+    22% {
+        color: #75a6ac;
+    }
+    23% {
+        color: #85b7a4;
+    }
+    24% {
+        color: #7bf5c6;
+    }
+    25% {
+        color: #9cb785;
+    }
+    26% {
+        color: #599f84;
+    }
+    27% {
+        color: #4d8b73;
+    }
+    28% {
+        color: #50a584;
+    }
+    29% {
+        color: #3dd851;
+    }
+    30% {
+        color: #539f5d;
+    }
+    31% {
+        color: #539f5d;
+    }
+    32% {
+        color: #5f9265;
+    }
+    33% {
+        color: #59b165;
+    }
+    34% {
+        color: #59539f;
+    }
+    35% {
+        color: #47ab55;
+    }
+    36% {
+        color: #2c6033;
+    }
+    37% {
+        color: #4776ab;
+    }
+    38% {
+        color: #c7be81;
+    }
+    39% {
+        color: #4f9f5a;
+    }
+    40% {
+        color: #aba647;
+    }
+    41% {
+        color: #7aad81;
+    }
+    42% {
+        color: #4771ab;
+    }
+    43% {
+        color: #7da1d4;
+    }
+    44% {
+        color: #2c69bf;
+    }
+    45% {
+        color: #698fc4;
+    }
+    46% {
+        color: #3569b1;
+    }
+    47% {
+        color: #3a6baf;
+    }
+    48% {
+        color: #883a88;
+    }
+    49% {
+        color: #4eb4bf;
+    }
+    50% {
+        color: #cab86b;
+    }
+    51% {
+        color: #d8cd9e;
+    }
+    52% {
+        color: #c0b589;
+    }
+    53% {
+        color: #578da4;
+    }
+    54% {
+        color: #8e6a9f;
+    }
+    55% {
+        color: #676a9f;
+    }
+    56% {
+        color: #726ea6;
+    }
+    57% {
+        color: #6c83a7;
+    }
+    58% {
+        color: #405c88;
+    }
+    59% {
+        color: #92e35f;
+    }
+    60% {
+        color: #519e32;
+    }
+    61% {
+        color: #87bd72;
+    }
+    62% {
+        color: #7ca26d;
+    }
+    63% {
+        color: #5dafac;
+    }
+    64% {
+        color: #66805b;
+    }
+    65% {
+        color: #52329e;
+    }
+    66% {
+        color: #6a9658;
+    }
+    67% {
+        color: #497979;
+    }
+    68% {
+        color: #7e88cb;
+    }
+    69% {
+        color: #505b9e;
+    }
+    70% {
+        color: #7ecba1;
+    }
+    71% {
+        color: #518d6c;
+    }
+    72% {
+        color: #46745b;
+    }
+    73% {
+        color: #7ea2cb;
+    }
+    74% {
+        color: #30518e;
+    }
+    75% {
+        color: #783787;
+    }
+    76% {
+        color: #a960ba;
+    }
+    77% {
+        color: #378774;
+    }
+    78% {
+        color: #995fa5;
+    }
+    79% {
+        color: #30c180;
+    }
+    80% {
+        color: #9cddbe;
+    }
+    81% {
+        color: #3a7156;
+    }
+    82% {
+        color: #4f357c;
+    }
+    83% {
+        color: #516882;
+    }
+    84% {
+        color: #5a6287;
+    }
+    85% {
+        color: #705db3;
+    }
+    86% {
+        color: #37854c;
+    }
+    87% {
+        color: #447a8d;
+    }
+    88% {
+        color: #8bc089;
+    }
+    89% {
+        color: #91a038;
+    }
+    90% {
+        color: #4673ce;
+    }
+    91% {
+        color: #2c364a;
+    }
+    92% {
+        color: #26c618;
+    }
+    93% {
+        color: #9c739f;
+    }
+    94% {
+        color: #4c765b;
+    }
+    95% {
+        color: #7ce5a6;
+    }
+    96% {
+        color: #58916f;
+    }
+    97% {
+        color: #6c8e7a;
+    }
+    98% {
+        color: #416284;
+    }
+    99% {
+        color: #435a8f;
+    }
+    100% {
+        color: #297d15;
+    }
+}
+
+h2 {
+    text-align: center;
+}
