@@ -44,8 +44,8 @@ class ReStackLayer
         };
         this.metaUpgrade = new RestackLayerUpgrade("All your Layer Resources are multiplied each second",
             level => new Decimal(1e10).pow(level.add("1").mul(level.add("1"))),
-            level => 1 + 0.3 * level.toNumber(),{
-                maxLevel: 5,
+            level => new Decimal.pow(3, level),{
+                maxLevel: 20,
             });
         this.upgradeTree = [
             [
@@ -58,9 +58,9 @@ class ReStackLayer
             ],
             [
                 new RestackLayerUpgrade("Resource Multipliers are stronger",
-                    level => new Decimal(1e50),
-                    level => Decimal.pow(4, level),{
-                        maxLevel: 1,
+                    level => new Decimal(1e50).pow(level),
+                    level => Decimal.pow(8, level),{
+                        maxLevel: 2,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     }),
                 new RestackLayerUpgrade("Resource Multiplier Upgrades are stronger based on time spent this ReStack",
@@ -90,7 +90,7 @@ class ReStackLayer
                     }),
                 new RestackLayerUpgrade("Resource Multipliers are stronger",
                     level => new Decimal("1e1500"),
-                    level => new Decimal(1).add(level.mul(3)), {
+                    level => new Decimal(1).add(level.mul(9)), {
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     })
@@ -109,12 +109,12 @@ class ReStackLayer
             [
                 new RestackLayerUpgrade("Resource Powerers are stronger",
                     level => new Decimal("1ee10"),
-                    level => new Decimal(1).add(level), {
+                    level => new Decimal(1).add(level.mul(1.5)), {
                         maxLevel: 1
                     }),
                 new RestackLayerUpgrade("Resource Multipliers scale better to their level",
                     level => new Decimal("1ee10"),
-                    level => new Decimal(1).add(level.mul(0.15)), {
+                    level => new Decimal(1).add(level.mul(0.17)), {
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     }),

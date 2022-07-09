@@ -154,7 +154,7 @@ class PrestigeLayer
     createGenerators()
     {
         this.generators = [];
-        for(let i = 0; i < 10; i++)
+        for(let i = 0; i < 15; i++)
         {
             const baseProd = i === 0 ? new Decimal(1) : new Decimal(0.2);
             this.generators.push(new Generator(this, i, i > 0 ? this.generators[i - 1] : null, i,
@@ -170,7 +170,7 @@ class PrestigeLayer
     createUpgrades()
     {
         const rand = new Random(this.layer);
-        const upgradeCount = 9 + rand.nextInt(5);
+        const upgradeCount = 13 + rand.nextInt(5);
         this.upgrades = [];
         const bpGrowth = 10.5 + rand.nextDouble();
         for(let i = 0; i < upgradeCount; i++)
@@ -271,7 +271,7 @@ class PrestigeLayer
             this.powerTargetLayer = game.layers[1];
             this.powerTargetType = TARGET_POWERGENERATORS;
         }
-        for(let i = 0; i < 10; i++)
+        for(let i = 0; i < 15; i++)
         {
             const rand = new Random(this.layer * (i + 1));
             const bpMult = 0.2 + 0.6 * rand.nextDouble();
@@ -303,7 +303,7 @@ class PrestigeLayer
     {
         this.challenges = [];
         const rand = new Random(this.layer);
-        const challengeCount = 4 + rand.nextInt(3);
+        const challengeCount = 8 + rand.nextInt(3);
         for(let i = 0; i < challengeCount; i++)
         {
             const randWords = new Random(this.layer * (i + 1))

@@ -102,7 +102,7 @@ const game = {
         new Achievement("Idle^2", "Buy the meta upgrade", "↑<sub>2<sub>", () => game.restackLayer.metaUpgrade.level.gte(1)),
         new Achievement("Idle^3", "Buy the meta upgrade 2 times", "↑<sub>3<sub>", () => game.restackLayer.metaUpgrade.level.gte(2)),
         new Achievement("No turning back", "Go meta and be reborn", "&Omega;", () => game.metaLayer.active),
-        new Achievement("Endgame", "Reach layer 1.8e308 and finish "+mod.primaryName+mod.secondaryName, "Ʊ", () => game.metaLayer.layer.gte(Infinities[0])),
+        new Achievement("Endgame", "Reach layer 1e310 and finish "+mod.primaryName+mod.secondaryName, "Ʊ", () => game.metaLayer.layer.gte("1e310")),
     ],
     secretAchievements: [
         new Achievement("A very long wait...", "Have a game with over 3 months of time", "...", () => game.timeSpent > 50803200),
@@ -110,6 +110,7 @@ const game = {
         new Achievement("Aleph-g", "Have 1e404 aleph", "&aleph;<sub>g</sub>", () => game.alephLayer.aleph.gte("1e404")),
         new Achievement("Meta sucks!", "Get &Omega; without meta", "&Omega;&Omega;&Omega;&Omega;&Omega;", () => game.highestLayer >= 47 && !game.metaLayer.active),
         new Achievement("Meta sucks! 2", "Get L275 without meta", "L275", () => game.metaLayer.layer.gte(275)),
+        new Achievement("A very long wait...", "Have a game with over 4 months of time", "...", () => game.timeSpent > 51803200),
         new Achievement("Volatility sucks!", "Get &epsilon; without layer volatility upgrade", "&epsilon;&epsilon;&epsilon;&epsilon;&epsilon;", () => game.highestLayer >= 5 && game.volatility.layerVolatility.level.eq(0)),
     ],
     alephLayer: new AlephLayer(),
