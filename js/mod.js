@@ -14,6 +14,30 @@ var mod = {
         ["Spiky", "css/themes/spiky.css"],
     ],
     layerNames: [
+        ["Spiky",
+        [
+            "------",
+            "|||||||",
+            "----"
+        ]],
+        ["Unarry Get",
+        [
+            "qqq",
+            "ppp",
+            "ssss"
+        ]],
+        ["Nice Unnary",
+        [
+            "a",
+            "a",
+            "bcde"
+        ]],
+        ["My Alphabet",
+        [
+            "abcdefghijklmnopqrstuvwxyz",
+            "123456789",
+            "ABCD"
+        ]],
         ["Ω-Lλγers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
