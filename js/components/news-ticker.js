@@ -12,7 +12,11 @@ Vue.component("news-ticker", {
                 "incremental thing i guess",
                 "omega layers but steam engine",
                 "mod.js: powering layers",
-                "i ran out of words on my hard drive :("
+                "i ran out of words on my hard drive :(",
+                "Wow nice is good know is beatful.",
+                "cool this files.",
+                "1",
+                "2"
             ],
             currentMessage: "",
             messageIndex: -1

@@ -1,6 +1,6 @@
 var mod = {
     primaryName: "ω",
-    secondaryName: "Engine",
+    secondaryName: "Engine ZA",
     version: "1.0.0",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
@@ -10,9 +10,35 @@ var mod = {
         ["Neon", "css/themes/neon.css"],
         ["Godot Blue", "css/themes/darkblue.css"],
         ["Halloween", "css/themes/spooky.css"],
-        ["eXPerience", "css/themes/experience.css"]
+        ["eXPerience", "css/themes/experience.css"],
+        ["Spiky", "css/themes/spiky.css"],
+        ["Vema 1", "css/themes/vema.css"],
     ],
     layerNames: [
+        ["Spiky",
+        [
+            "------",
+            "|||||||",
+            "----"
+        ]],
+        ["Unarry Get",
+        [
+            "qqq",
+            "ppp",
+            "ssss"
+        ]],
+        ["Nice Unnary",
+        [
+            "a",
+            "a",
+            "bcde"
+        ]],
+        ["My Alphabet",
+        [
+            "abcdefghijklmnopqrstuvwxyz",
+            "123456789",
+            "ABCD"
+        ]],
         ["Ω-Lλγers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",

@@ -11,7 +11,7 @@ const functions = {
         }
         if(n.lt(0))
         {
-            return "-" + this.formatNumber(n.mul(-1), prec, prec1000, lim);
+            return "Negative of " + this.formatNumber(n.mul(-1), prec, prec1000, lim);
         }
         if(n.lt(Decimal.pow(0.1, Math.max(1, prec1000))) && n.neq(0))
         {
@@ -383,11 +383,11 @@ const functions = {
         const lid = new Decimal(layer);
         if(lid.gte(Infinities[3]))
         {
-            return "#ffffff";
+            return "#fff2ff";
         }
         if(lid.gte(Infinities[2]))
         {
-            return "#ff9100";
+            return "#2f9100";
         }
         if(lid.gte(Infinities[1]))
         {
@@ -395,7 +395,7 @@ const functions = {
         }
         if(lid.gte(Infinities[0]))
         {
-            return "#ff00ff";
+            return "#00ffff";
         }
         let h = 33 * Math.min(lid.toNumber(), 10000);
         if(lid.gt(10000))
