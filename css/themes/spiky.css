@@ -1,0 +1,119 @@
+:root{
+    --background-body: #001858;
+    --background-header: #001f6e;
+    --color-base: #00103a;
+    --color-primary: #0048ff;
+    --color-hover: #4b6492;
+    --color-hover-strong: #4c78e6;
+    --color-contrast: #b6b6b6;
+    --color-success: #0044ff;
+    --button-dark: #000e27;
+    --notification--error: #F5431F;
+    --notification--success: #38a019;
+    --notification--special: #99861b;
+}
+
+@keyframes eras {
+    1% {
+        color: #0044ff;
+    }
+    2% {
+        color: #5975c1;
+    }
+    3% {
+        color: #425894;
+    }
+    4% {
+        color: #313b57;
+    }
+    5% {
+        color: #5170c3;
+    }
+    6% {
+        color: #614976;
+    }
+    7% {
+        color: #5fb04f;
+    }
+    8% {
+        color: #6a7fb7;
+    }
+    10% {
+        color: #5eff00;
+    }
+    11% {
+        color: #98ce79;
+    }
+    12% {
+        color: #b1d69c;
+    }
+    13% {
+        color: #80a36b;
+    }
+    14% {
+        color: #688c54;
+    }
+    15% {
+        color: #6aa846;
+    }
+    16% {
+        color: #b1d19f;
+    }
+    17% {
+        color: #d4ff00;
+    }
+    18% {
+        color: #d4ff00;
+    }
+    19% {
+        color: #d4ff00;
+    }
+    20% {
+        color: #8a9458;
+    }
+    21% {
+        color: #383fa2;
+    }
+    22% {
+        color: #75a6ac;
+    }
+    23% {
+        color: #85b7a4;
+    }
+    24% {
+        color: #7bf5c6;
+    }
+    25% {
+        color: #9cb785;
+    }
+    26% {
+        color: #599f84;
+    }
+    27% {
+        color: #4d8b73;
+    }
+    28% {
+        color: #50a584;
+    }
+    29% {
+        color: #3dd851;
+    }
+    30% {
+        color: #539f5d;
+    }
+    31% {
+        color: #539f5d;
+    }
+    32% {
+        color: #5f9265;
+    }
+    33% {
+        color: #59b165;
+    }
+    34% {
+        color: #59539f;
+    }
+    35% {
+        color: #47ab55;
+    }
+}
