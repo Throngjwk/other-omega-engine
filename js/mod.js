@@ -10,7 +10,8 @@ var mod = {
         ["Neon", "css/themes/neon.css"],
         ["Godot Blue", "css/themes/darkblue.css"],
         ["Halloween", "css/themes/spooky.css"],
-        ["eXPerience", "css/themes/experience.css"]
+        ["eXPerience", "css/themes/experience.css"],
+        ["Spiky", "css/themes/spiky.css"],
     ],
     layerNames: [
         ["Ω-Lλγers",
