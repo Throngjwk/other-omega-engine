@@ -12,6 +12,7 @@ var mod = {
         ["Halloween", "css/themes/spooky.css"],
         ["eXPerience", "css/themes/experience.css"],
         ["Spiky", "css/themes/spiky.css"],
+        ["Vema 1", "css/themes/vema.css"],
     ],
     layerNames: [
         ["Spiky",
