@@ -1,17 +1,23 @@
-Vue.component("endgame-tab", {
+Vue.component("pid-tab", {
     computed: {
-        timeSpent: function() {
-            time = game.timeSpent;
-            formattedTime = functions.formatTime(time)
-            return formattedTime
+        xValue: function() {
+            x = new Decimal(15)
+            return x
+        },
+        yValue: function() {
+            y = new Decimal(20)
+            return y
         },
     },
     methods: {
-        hardResetGame: () => functions.hardResetGame(),
+        updatePID: () => {
+            x = new Decimal(document.getElementById("x").value)
+            y = new Decimal(document.getElementById("y").value)
+        },
     },
-    template: `<div id="endgame">
-    <h2><span class="omega">You</span> Win!</h2>
-    <p>You beat the game in <span class="omega">{{timeSpent}}</span><br>
-    <button onclick="game.settings.tab = 'Layers'">Continue</button> <button @click="hardResetGame()">Wipe Game</button></p>
+    template: `<div id="pid">
+    <h1>PID</h1>
+    <input min="0" max="40" id="x" type="number"></input>
+    <input min="0" max="40" id="y" type="number"></input>
 </div>`
 })
