@@ -4,7 +4,7 @@ class CandyLayer
     {
         this.points = new Decimal(0);
         this.upgrades = {
-            candyGain: new CandyUpgrade2("Increase your point gain",
+            pointGain: new CandyUpgrade2("Increase your point gain",
                 level => new Decimal(2).pow(level),
                 level => Decimal.pow(1.75, level)),
         }
@@ -42,7 +42,7 @@ class CandyLayer
     {
         if(this.isUnlocked())
         {
-            this.aleph = this.aleph.add(this.getAlephGain().mul(dt));
+            this.points = this.points.add(this.getPointGain().mul(dt));
         }
     }
 
