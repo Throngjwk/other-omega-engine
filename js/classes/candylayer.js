@@ -9,21 +9,25 @@ class CandyLayer
                 level => Decimal.pow(1.75, level)),
         }
 
-    getAlephGain()
+    getPointGain()
     {
         return this.upgrades.pointGain.apply();
     }
 
-    isUnlocked()
+    clickPrestige()
     {
-        return game.highestLayer >= 3;
+        this.candy = this.points.div(10)
+        this.points = new Decimal(0)
     }
 
-    getAlephBoostFromLayer()
+    isUnlocked()
     {
-        if(functions.maxLayerUnlocked() < 3) return new Decimal(0);
-        if(game.layers[3].timesReset === 0) return new Decimal(0);
-        return Decimal.pow(10, Math.max(0, functions.maxLayerUnlocked() - 3));
+        return game.metaLayer.active
+    }
+
+    getCandyBoostFromLayer()
+    {
+        return new Decimal(1)
     }
 
     maxAll()
