@@ -8,6 +8,7 @@ class CandyLayer
                 level => new Decimal(2).pow(level),
                 level => Decimal.pow(1.75, level)),
         }
+    }
 
     getPointGain()
     {
@@ -57,5 +58,4 @@ class CandyLayer
             }
         }
     }
-}
 }
