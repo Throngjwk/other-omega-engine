@@ -1,7 +1,7 @@
 const UPGRADE_RESOURCE = 0, UPGRADE_GENERATOR = 1, UPGRADE_GENMULTI = 2, UPGRADE_POWERGENERATOR = 3, UPGRADE_PRESTIGEREWARD = 4,
     UPGRADE_RESOURCE_TIMELAYER = 5, UPGRADE_GENERATOR_TIMELAYER = 6, UPGRADE_POWERGENERATOR_TIMELAYER = 7;
 
-const RESOURCE_ALEPH = 0, RESOURCE_LAYERCOINS = 1
+const RESOURCE_ALEPH = 0, RESOURCE_LAYERCOINS = 1, RESOURCE_CANDY = 2, RESOURCE_CANDY_POINTS = 3
 
 class AbstractUpgrade
 {
@@ -271,6 +271,10 @@ class ResourceUpgrade extends AbstractUpgrade
                 return game.alephLayer.aleph;
             case RESOURCE_LAYERCOINS:
                 return game.restackLayer.layerCoins;
+            case RESOURCE_CANDY_POINTS:
+                return game.candyLayer.points;
+            case RESOURCE_CANDY:
+                return game.candyLayer.candy;
         }
     }
 
@@ -283,6 +287,12 @@ class ResourceUpgrade extends AbstractUpgrade
                 break;
             case RESOURCE_LAYERCOINS:
                 game.restackLayer.layerCoins = game.restackLayer.layerCoins.sub(res);
+                break;
+            case RESOURCE_CANDY_POINTS:
+                game.candyLayer.points = game.restackLayer.points.sub(res);
+                break;
+            case RESOURCE_CANDY:
+                game.candyLayer.candy = game.candyLayer.candy.sub(res);
                 break;
         }
     }
@@ -310,6 +320,22 @@ class ResourceUpgrade extends AbstractUpgrade
         {
             this.buy();
         }
+    }
+}
+
+class CandyUpgrade extends ResourceUpgrade
+{
+    constructor(description, getPrice, getEffect, cfg)
+    {
+        super(description, getPrice, getEffect, RESOURCE_CANDY_POINTS, cfg);
+    }
+}
+
+class CandyUpgrade2 extends ResourceUpgrade
+{
+    constructor(description, getPrice, getEffect, cfg)
+    {
+        super(description, getPrice, getEffect, RESOURCE_CANDY, cfg);
     }
 }
 
