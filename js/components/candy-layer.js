@@ -18,7 +18,7 @@ Vue.component("candy-layer", {
     methods: {
         formatNumber: (n, prec, prec1000, lim) => functions.formatNumber(n, prec, prec1000, lim),
     },
-    template: `<div class="aleph-layer">
+    template: `<div class="candy-layer">
 <div class="resource">
     <p>You have {{formatNumber(candy.points, 2, 2, 1e9)}} <span class="aleph">P</span></p>
     <p>You have {{formatNumber(candy.candy, 2, 2, 1e9)}} <span class="aleph">C</span></p>
