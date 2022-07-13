@@ -128,6 +128,7 @@ function tickGame(seconds)
         }
     }
     game.alephLayer.tick(seconds);
+    game.candyLayer.tick(seconds);
 
     for(const k of Object.keys(game.automators))
     {
